@@ -12,10 +12,10 @@ import org.springframework.context.annotation.Configuration;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.spring.cache.HazelcastCacheManager;
 
-@Configuration
-@EnableCaching
+//@Configuration
+//@EnableCaching
 public class CachingConfig {
-    @Bean(name = "cacheManager")
+//    @Bean(name = "cacheManager")
     HazelcastCacheManager hazelcastcacheManager() throws Exception {
         return new HazelcastCacheManager(Hazelcast.newHazelcastInstance());
     }
